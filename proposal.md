@@ -19,7 +19,7 @@ This is icberg/ship binary image classification problem. Since this is an ongoin
 
 ### Datasets and Inputs
 
-_Statoil_ and _C-CORE_ provide a training dataset with size 42.85mb and a test dataset with size 245.22mb. The format of the data is in JSON. For each row, the data have 5 different name fields. There 1604 total samples in trainging dataset and 8424 total samples in test dataset. 
+_Statoil_ and _C-CORE_ provide a training dataset with size 42.85mb and a test dataset with size 245.22mb. The format of the data is in JSON. For each row, the data have 5 different name fields. There 1604 total samples in trainging dataset and 8424 total samples in test dataset.
 
 - id: the id of the Image
 - band_1, band_2: the flattened image data. Each band has 75*75 pixel values in the list, so in each band there is a list of 75\*75=5625 elements. Each element is a float number.
