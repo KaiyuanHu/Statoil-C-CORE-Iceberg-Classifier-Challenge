@@ -30,8 +30,8 @@ Based on the information above, we know that the image is black-white scale and 
 
 Here is the sample image.
 
-![icebergs](/Users/Kieran/Documents/MLND/Statoil-C-CORE-Iceberg-Classifier-Challenge/sample_img/8ZkRcp4.png)
-![ship](/Users/Kieran/Documents/MLND/Statoil-C-CORE-Iceberg-Classifier-Challenge/sample_img/nXK6Vdl.png)
+![icebergs](https://storage.googleapis.com/kaggle-media/competitions/statoil/8ZkRcp4.png)
+![ship](https://storage.googleapis.com/kaggle-media/competitions/statoil/nXK6Vdl.png)
 
 ### Solution Statement
 
