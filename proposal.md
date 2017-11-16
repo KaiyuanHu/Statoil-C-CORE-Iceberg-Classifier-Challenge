@@ -33,6 +33,8 @@ Here is the sample image.
 ![icebergs](https://storage.googleapis.com/kaggle-media/competitions/statoil/8ZkRcp4.png)
 ![ship](https://storage.googleapis.com/kaggle-media/competitions/statoil/nXK6Vdl.png)
 
+The data can be download by this link: https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data
+
 ### Solution Statement
 
 Since this is a binary image classification problem, CNN seems suitable for this problem. I will go to design a transfer learning model that uses two pre_trained ResNet50 model first. After that mix the result from the pre_trained model and add some other layers like dropout layer max-pooling layer and fully connected layer. Based on my knowledge, I don' t think the incidence angle will matter but I will try to add this feature if I have enough time.
