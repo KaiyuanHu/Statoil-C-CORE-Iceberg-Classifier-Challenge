@@ -7,7 +7,7 @@ October 11, 2017
 
 ### Domain Background
 
-[Statoil/C-CORE Iceberg Classifier Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge) is an ongoing competition state on Kaggle. This is a icberg/ship binary image classification problem. 
+[Statoil/C-CORE Iceberg Classifier Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge) is an ongoing competition state on Kaggle. This is a icberg/ship image binary classification problem.
 
 _Statoil_ worked closely with _C-CORE_ that use remote sensing system to detect icebergs. The remote sensing system is housed on satellites over 600 kilometers above the earth. The satellites provide two channels image information: HH(transmit/receive horizontally) and HV(transmit horizontally and receive vertically). They want to use those image data to find a model can classify those icebergs from ships.
 
@@ -15,7 +15,7 @@ Image classification is a difficult problem in computer vision area. Convolution
 
 ### Problem Statement
 
-This is icberg/ship binary image classification problem. Since this is an ongoing competition state on Kaggle, this problem does not be solved. This is a binary image classification problem, the best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score. So the performance of the model can be evaluated by log score.
+This is icberg/ship binary image classification problem. Since this is an ongoing competition state on Kaggle, this problem does not be solved. The input for this problem is images which might be a Iceberg image or a ship image. Then we map those inputs to two distinct groups: Iceberg or Ships by using CNN and binary classification method. CNN is used to recognize the object inside the image and the binary classification method is used to classify the object. The output for this algorithm should be the probabity that for each input image whether it contains an iceberg or a ship.
 
 ### Datasets and Inputs
 
@@ -50,6 +50,8 @@ Here is the detail:
 Basically, I will follow the idea state above, but this is just a statement. I may modify the structure of the model during the implementation.
 
 ### Benchmark Model
+
+The best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score. So the performance of the model can be evaluated by log score.
 
 [noobhound](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl) proposed a CNN model on Kaggle. This CNN model reaches 0.21174 log score. The model _noobhound_ used seems to be a simplified VGG-16 net. He adds some dropout layer between each block and he changes the final fully connected layer to GlobalMaxPooling layer. He also adds a Concatenate step that mix band_1 and band_2. You can find the detail implementation of he model at [Here](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl). The model is in code block 4.
 
