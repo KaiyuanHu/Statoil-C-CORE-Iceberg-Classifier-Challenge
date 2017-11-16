@@ -33,7 +33,8 @@ Here is the sample image.
 ![icebergs](https://storage.googleapis.com/kaggle-media/competitions/statoil/8ZkRcp4.png)
 ![ship](https://storage.googleapis.com/kaggle-media/competitions/statoil/nXK6Vdl.png)
 
-The data can be download by this link: https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data
+Training data can be download [here](https://kaggle2.blob.core.windows.net/competitions-data/kaggle/7380/train.json.7z)https://kaggle2.blob.core.windows.net/competitions-data/kaggle/7380/train.json.7z\
+Test data can be download [here](https://kaggle2.blob.core.windows.net/competitions-data/kaggle/7380/test.json.7z)https://kaggle2.blob.core.windows.net/competitions-data/kaggle/7380/test.json.7z
 
 ### Solution Statement
 
