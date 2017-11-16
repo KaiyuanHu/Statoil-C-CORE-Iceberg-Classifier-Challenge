@@ -50,21 +50,23 @@ Here is the detail:
 Basically, I will follow the idea state above, but this is just a statement. I may modify the structure of the model during the implementation.
 
 ### Benchmark Model
+Since this is an unsolved problem, there is no benchmark model for this problem. The best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score.
 
-The best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score. So the performance of the model can be evaluated by log score.
-
-[noobhound](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl) proposed a CNN model on Kaggle. This CNN model reaches 0.21174 log score. The model _noobhound_ used seems to be a simplified VGG-16 net. He adds some dropout layer between each block and he changes the final fully connected layer to GlobalMaxPooling layer. He also adds a Concatenate step that mix band_1 and band_2. You can find the detail implementation of he model at [Here](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl). The model is in code block 4.
+After carefully review, I choose the model propsed by [noobhound](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl) as the benchmark model with  0.21174 log score. [noobhound](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl) proposed a CNN model on Kaggle kernel, which i think is the most clear and easy-understand CNN solution for the binary image classification probelm. The model _noobhound_ used is a simplified VGG-16 net. He added some dropout layer between each convolutional block and he changed the final fully connected layer to GlobalMaxPooling layer. He also added a Concatenate layer that merge band_1 and band_2. You can find the detail implementation of he model at [Here](https://www.kaggle.com/knowledgegrappler/a-keras-prototype-0-21174-on-pl). The detail model is in code block 4.
 
 ### Evaluation Metrics
 
-The performance of this model can be evaluated by accuracy score.
+The output for the model with be a list of probabilities and the probability small than 0.5 means the model think there is a ship insdie the image as well as the probaility great than 0.5 means the model think there is an iceberg inside the image. Based on this information, we can count how many image be classified as iceberg and how many image be classified as ship. I think confusion matrix and accuracy is easy way to measure the performance of a binary classification model. So, I will compute the confusion matrix and calcualte the accuracy score for the model.
 
-Here is a sample table:
+i will also train the benchmark model to compare the performance between my model and the benchmark model.
+
+Here is a sample table for the confusion matrix.
 
 
-|                     | Iceberg     | Ship |
+|                     | Actual_Iceberg     | Actual_Ship |
 | ------------------- |-------------| -----|
-| Prediction accuracy |      X%     |   X% |
+| Pred_Iceberg             |      TP   |  FP |
+| Pred_Ship                |      FN     |   TN |
 
 
 ### Project Design
@@ -82,6 +84,7 @@ Here is the workflow for this project.
     - Try to use different optimization function to optimize the model.
 4. Train the CNN model.
     - Adjust parameters to optimize the model.
+    - Compare the performance of this model with the benchmark model.
 5. Write report.
     - Write the final report as required.
 
