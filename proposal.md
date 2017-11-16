@@ -7,7 +7,7 @@ October 11, 2017
 
 ### Domain Background
 
-[Statoil/C-CORE Iceberg Classifier Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge) is an ongoing competition state on Kaggle.
+[Statoil/C-CORE Iceberg Classifier Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge) is an ongoing competition state on Kaggle. This is a icberg/ship binary image classification problem. 
 
 _Statoil_ worked closely with _C-CORE_ that use remote sensing system to detect icebergs. The remote sensing system is housed on satellites over 600 kilometers above the earth. The satellites provide two channels image information: HH(transmit/receive horizontally) and HV(transmit horizontally and receive vertically). They want to use those image data to find a model can classify those icebergs from ships.
 
@@ -15,7 +15,7 @@ Image classification is a difficult problem in computer vision area. Convolution
 
 ### Problem Statement
 
-Since this is an ongoing competition state on Kaggle, this problem does not be solved. This is a binary image classification problem, the best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score. So the performance of the model can be evaluated by log score.
+This is icberg/ship binary image classification problem. Since this is an ongoing competition state on Kaggle, this problem does not be solved. This is a binary image classification problem, the best result up-to-date on Kaggle have 0.1029 log score and the 20th best result on Kaggle have 0.1463 log score. So the performance of the model can be evaluated by log score.
 
 ### Datasets and Inputs
 
