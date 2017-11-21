@@ -1,12 +1,20 @@
-# Machine Learning Engineer Nanodegree
-## Capstone Project
-Joe Udacity  
-December 31st, 2050
+# Iceberg/Ship Image Classification
+Kaiyuan Hu  
+Nov 21st, 2017
 
 ## I. Definition
 _(approx. 1-2 pages)_
 
 ### Project Overview
+
+Image recognition and classification is one of the most difficult and hottest in computer vision area. Recently, Convolutional neural network(CNN) arise a lot of attention in this area. In 2014, Simonyan, Karen, and etc. proposed a CNN archecture named VGG-16, which gained 92.4% classification accuracy in ILSVRC-2012 dataset. In 2015, Keming, He and etc, proposed a awesome CNN archecture named ResNet-152, which have 152 layers and gained about 95% image classification accuracy, a superhuman accuracy, on ImageNet dataset.
+
+As show in the figure, CNN archecture usually take images as input, followed by several convolutional layers and pooling layer, which also called neural network. Finally, CNN archecture use softmax layer or sigmoid layer as classifier to generate classification result.
+![figure1](https://www.cs.toronto.edu/~frossard/post/vgg16/banner.jpg)
+
+Kaggle hold a Data science competition online. The mainly goal for this competition is to find a model that correctly classify 
+
+
 In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
@@ -112,7 +120,14 @@ In this section, you will need to provide discussion as to how one aspect of the
 - _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
 - _If you used your final solution as the new benchmark, do you think an even better solution exists?_
 
+# Reference
+
+- Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).
+
+
+
 -----------
+
 
 **Before submitting, ask yourself. . .**
 
