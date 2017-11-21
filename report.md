@@ -12,7 +12,7 @@ Image recognition and classification is one of the most difficult and hottest in
 As show in the figure, CNN archecture usually take images as input, followed by several convolutional layers and pooling layer, which also called neural network. Finally, CNN archecture use softmax layer or sigmoid layer as classifier to generate classification result.
 ![figure1](https://www.cs.toronto.edu/~frossard/post/vgg16/banner.jpg)
 
-Kaggle hold a Data science competition online. The mainly goal for this competition is to find a model that correctly classify 
+Kaggle hold a Data science competition online. The mainly goal for this competition is to find a model that correctly classify Iceberg from Ship according to the Image they provided. 
 
 
 In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
@@ -123,6 +123,9 @@ In this section, you will need to provide discussion as to how one aspect of the
 # Reference
 
 - Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).
+- https://www.cs.toronto.edu/~frossard/post/vgg16/
+- He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+-
 
 
 
